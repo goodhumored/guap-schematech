@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Feb 16 04:06:13 2024
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+Revision Name : 6
+Top-level Entity Name : 6
+Family : MAX II
+Device : EPM570ZM256I8
+Timing Models : Final
+Total logic elements : 14 / 570 ( 2 % )
+Total pins : 6 / 160 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

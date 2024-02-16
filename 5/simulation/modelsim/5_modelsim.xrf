@@ -1,0 +1,7 @@
+vendor_name = ModelSim
+source_file = 1, C:/users/goodhumored/Documents/vuz/5sem/schematech/5/5.bdf
+source_file = 1, C:/users/goodhumored/Documents/vuz/5sem/schematech/5/Waveform.vwf
+source_file = 1, C:/users/goodhumored/Documents/vuz/5sem/schematech/5/db/5.cbx.xml
+design_name = \5 
+instance = comp, \c~I , c, \5 , 1
+instance = comp, \Q1~I , Q1, \5 , 1

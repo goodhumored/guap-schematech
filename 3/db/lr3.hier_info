@@ -1,0 +1,9 @@
+|lr3
+c => ~NO_FANOUT~
+Q0 <= <GND>
+Q1 <= <GND>
+Q2 <= <GND>
+Q3 <= <GND>
+Q4 <= <GND>
+
+

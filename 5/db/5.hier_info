@@ -1,0 +1,14 @@
+|5
+Q1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+c => inst8.CLK
+c => inst7.CLK
+c => inst15.CLK
+c => inst6.CLK
+c => inst14.CLK
+c => inst13.CLK
+c => inst12.CLK
+c => inst11.CLK
+c => inst10.CLK
+c => inst9.CLK
+
+

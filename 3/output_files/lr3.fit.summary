@@ -1,0 +1,11 @@
+Fitter Status : Successful - Thu Feb 15 11:38:10 2024
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+Revision Name : lr3
+Top-level Entity Name : lr3
+Family : MAX II
+Device : EPM570ZM144C6
+Timing Models : Final
+Total logic elements : 0 / 570 ( 0 % )
+Total pins : 6 / 116 ( 5 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
