@@ -1,0 +1,1453 @@
+// Copyright (C) 2022  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition"
+
+// DATE "02/16/2024 06:17:55"
+
+// 
+// Device: Altera EPM570ZM256I8 Package MBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module \7  (
+	out,
+	w,
+	c,
+	n);
+output 	out;
+input 	w;
+input 	c;
+input 	[6:0] n;
+
+// Design Ports Information
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~5 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~10 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~15 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~20 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~25 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~30 ;
+wire \c~combout ;
+wire \w~combout ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cout[0]~COUT1_1 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31_combout ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12COUT1_33 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17COUT1_34 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22COUT1_35 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7COUT1_36 ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0_combout ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25_combout ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20_combout ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15_combout ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10_combout ;
+wire \inst2|dffs[0]~_wirecell_combout ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUT ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUTCOUT1_1 ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUT ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUTCOUT1_1 ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUT ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUTCOUT1_1 ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT ;
+wire \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0_combout ;
+wire \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5_combout ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUT ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUTCOUT1_1 ;
+wire \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1_combout ;
+wire \inst8~combout ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUT ;
+wire \inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUTCOUT1_1 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~32_cout0 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~32COUT1_36 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~27_cout0 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~27COUT1_37 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~22_cout0 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~22COUT1_38 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~12_cout0 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~12COUT1_39 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~7_cout0 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~7COUT1_40 ;
+wire \inst6|LPM_COMPARE_component|auto_generated|op_1~0_combout ;
+wire [6:0] \n~combout ;
+wire [6:0] \inst|LPM_ADD_SUB_component|adder|result_node|cout ;
+wire [6:0] \inst2|dffs ;
+wire [6:0] \inst3|LPM_COUNTER_component|auto_generated|safe_q ;
+
+
+// Location: PIN_K1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \c~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\c~combout ),
+	.padio(c));
+// synopsys translate_off
+defparam \c~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_L1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \w~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\w~combout ),
+	.padio(w));
+// synopsys translate_off
+defparam \w~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_W6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \n[6]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\n~combout [6]),
+	.padio(n[6]));
+// synopsys translate_off
+defparam \n[6]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X3_Y5_N5
+maxii_lcell \inst2|dffs[6] (
+// Equation(s):
+// \inst2|dffs [6] = DFFEAS(GND, GLOBAL(\w~combout ), VCC, , , \n~combout [6], , , VCC)
+
+	.clk(\w~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\n~combout [6]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst2|dffs [6]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst2|dffs[6] .lut_mask = "0000";
+defparam \inst2|dffs[6] .operation_mode = "normal";
+defparam \inst2|dffs[6] .output_mode = "reg_only";
+defparam \inst2|dffs[6] .register_cascade_mode = "off";
+defparam \inst2|dffs[6] .sum_lutc_input = "datac";
+defparam \inst2|dffs[6] .synch_mode = "on";
+// synopsys translate_on
+
+// Location: PIN_Y4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \n[4]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\n~combout [4]),
+	.padio(n[4]));
+// synopsys translate_off
+defparam \n[4]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X3_Y5_N6
+maxii_lcell \inst2|dffs[4] (
+// Equation(s):
+// \inst2|dffs [4] = DFFEAS(GND, GLOBAL(\w~combout ), VCC, , , \n~combout [4], , , VCC)
+
+	.clk(\w~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\n~combout [4]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst2|dffs [4]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst2|dffs[4] .lut_mask = "0000";
+defparam \inst2|dffs[4] .operation_mode = "normal";
+defparam \inst2|dffs[4] .output_mode = "reg_only";
+defparam \inst2|dffs[4] .register_cascade_mode = "off";
+defparam \inst2|dffs[4] .sum_lutc_input = "datac";
+defparam \inst2|dffs[4] .synch_mode = "on";
+// synopsys translate_on
+
+// Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \n[3]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\n~combout [3]),
+	.padio(n[3]));
+// synopsys translate_off
+defparam \n[3]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N0
+maxii_lcell \inst2|dffs[3] (
+// Equation(s):
+// \inst2|dffs [3] = DFFEAS(GND, GLOBAL(\w~combout ), VCC, , , \n~combout [3], , , VCC)
+
+	.clk(\w~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\n~combout [3]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst2|dffs [3]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst2|dffs[3] .lut_mask = "0000";
+defparam \inst2|dffs[3] .operation_mode = "normal";
+defparam \inst2|dffs[3] .output_mode = "reg_only";
+defparam \inst2|dffs[3] .register_cascade_mode = "off";
+defparam \inst2|dffs[3] .sum_lutc_input = "datac";
+defparam \inst2|dffs[3] .synch_mode = "on";
+// synopsys translate_on
+
+// Location: PIN_T4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \n[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\n~combout [2]),
+	.padio(n[2]));
+// synopsys translate_off
+defparam \n[2]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X3_Y5_N4
+maxii_lcell \inst2|dffs[2] (
+// Equation(s):
+// \inst2|dffs [2] = DFFEAS(GND, GLOBAL(\w~combout ), VCC, , , \n~combout [2], , , VCC)
+
+	.clk(\w~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\n~combout [2]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst2|dffs [2]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst2|dffs[2] .lut_mask = "0000";
+defparam \inst2|dffs[2] .operation_mode = "normal";
+defparam \inst2|dffs[2] .output_mode = "reg_only";
+defparam \inst2|dffs[2] .register_cascade_mode = "off";
+defparam \inst2|dffs[2] .sum_lutc_input = "datac";
+defparam \inst2|dffs[2] .synch_mode = "on";
+// synopsys translate_on
+
+// Location: PIN_N2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \n[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\n~combout [0]),
+	.padio(n[0]));
+// synopsys translate_off
+defparam \n[0]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N7
+maxii_lcell \inst2|dffs[0] (
+// Equation(s):
+// \inst2|dffs [0] = DFFEAS((\n~combout [0]), GLOBAL(\w~combout ), VCC, , , , , , )
+// \inst|LPM_ADD_SUB_component|adder|result_node|cout [0] = CARRY(((\inst2|dffs [0])))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cout[0]~COUT1_1  = CARRY(((\inst2|dffs [0])))
+
+	.clk(\w~combout ),
+	.dataa(\n~combout [0]),
+	.datab(\inst2|dffs [0]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst2|dffs [0]),
+	.cout(),
+	.cout0(\inst|LPM_ADD_SUB_component|adder|result_node|cout [0]),
+	.cout1(\inst|LPM_ADD_SUB_component|adder|result_node|cout[0]~COUT1_1 ));
+// synopsys translate_off
+defparam \inst2|dffs[0] .lut_mask = "aacc";
+defparam \inst2|dffs[0] .operation_mode = "arithmetic";
+defparam \inst2|dffs[0] .output_mode = "reg_only";
+defparam \inst2|dffs[0] .register_cascade_mode = "off";
+defparam \inst2|dffs[0] .sum_lutc_input = "datac";
+defparam \inst2|dffs[0] .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N8
+maxii_lcell \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 (
+// Equation(s):
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31_combout  = (((\inst|LPM_ADD_SUB_component|adder|result_node|cout [0])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst|LPM_ADD_SUB_component|adder|result_node|cout [0]),
+	.cin1(\inst|LPM_ADD_SUB_component|adder|result_node|cout[0]~COUT1_1 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .cin0_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .cin1_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .lut_mask = "f0f0";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .operation_mode = "normal";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .output_mode = "comb_only";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .register_cascade_mode = "off";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .sum_lutc_input = "cin";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_R3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \n[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\n~combout [1]),
+	.padio(n[1]));
+// synopsys translate_off
+defparam \n[1]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N9
+maxii_lcell \inst2|dffs[1] (
+// Equation(s):
+// \inst2|dffs [1] = DFFEAS(GND, GLOBAL(\w~combout ), VCC, , , \n~combout [1], , , VCC)
+
+	.clk(\w~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\n~combout [1]),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst2|dffs [1]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst2|dffs[1] .lut_mask = "0000";
+defparam \inst2|dffs[1] .operation_mode = "normal";
+defparam \inst2|dffs[1] .output_mode = "reg_only";
+defparam \inst2|dffs[1] .register_cascade_mode = "off";
+defparam \inst2|dffs[1] .sum_lutc_input = "datac";
+defparam \inst2|dffs[1] .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N1
+maxii_lcell \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10 (
+// Equation(s):
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10_combout  = \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31_combout  $ ((\inst2|dffs [1]))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12  = CARRY((\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31_combout  & (\inst2|dffs [1])))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12COUT1_33  = CARRY((\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31_combout  & (\inst2|dffs [1])))
+
+	.clk(gnd),
+	.dataa(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~31_combout ),
+	.datab(\inst2|dffs [1]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10_combout ),
+	.regout(),
+	.cout(),
+	.cout0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12 ),
+	.cout1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12COUT1_33 ));
+// synopsys translate_off
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10 .lut_mask = "6688";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10 .operation_mode = "arithmetic";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10 .output_mode = "comb_only";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10 .register_cascade_mode = "off";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10 .sum_lutc_input = "datac";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N2
+maxii_lcell \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 (
+// Equation(s):
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15_combout  = (\inst2|dffs [2] $ ((\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12 )))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17  = CARRY(((!\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12 ) # (!\inst2|dffs [2])))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17COUT1_34  = CARRY(((!\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12COUT1_33 ) # (!\inst2|dffs [2])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\inst2|dffs [2]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12 ),
+	.cin1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~12COUT1_33 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15_combout ),
+	.regout(),
+	.cout(),
+	.cout0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17 ),
+	.cout1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17COUT1_34 ));
+// synopsys translate_off
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .cin0_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .cin1_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .lut_mask = "3c3f";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .operation_mode = "arithmetic";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .output_mode = "comb_only";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .register_cascade_mode = "off";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .sum_lutc_input = "cin";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N3
+maxii_lcell \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 (
+// Equation(s):
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20_combout  = (\inst2|dffs [3] $ ((!\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17 )))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22  = CARRY(((\inst2|dffs [3] & !\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17 )))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22COUT1_35  = CARRY(((\inst2|dffs [3] & !\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17COUT1_34 )))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\inst2|dffs [3]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17 ),
+	.cin1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~17COUT1_34 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20_combout ),
+	.regout(),
+	.cout(),
+	.cout0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22 ),
+	.cout1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22COUT1_35 ));
+// synopsys translate_off
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .cin0_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .cin1_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .lut_mask = "c30c";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .operation_mode = "arithmetic";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .output_mode = "comb_only";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .register_cascade_mode = "off";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .sum_lutc_input = "cin";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N4
+maxii_lcell \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 (
+// Equation(s):
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25_combout  = \inst2|dffs [4] $ ((((\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22 ))))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27  = CARRY(((!\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22COUT1_35 )) # (!\inst2|dffs [4]))
+
+	.clk(gnd),
+	.dataa(\inst2|dffs [4]),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22 ),
+	.cin1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~22COUT1_35 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25_combout ),
+	.regout(),
+	.cout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27 ),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .cin0_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .cin1_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .lut_mask = "5a5f";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .operation_mode = "arithmetic";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .output_mode = "comb_only";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .register_cascade_mode = "off";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .sum_lutc_input = "cin";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_W5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \n[5]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\n~combout [5]),
+	.padio(n[5]));
+// synopsys translate_off
+defparam \n[5]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X3_Y5_N2
+maxii_lcell \inst2|dffs[5] (
+// Equation(s):
+// \inst2|dffs [5] = DFFEAS((((\n~combout [5]))), GLOBAL(\w~combout ), VCC, , , , , , )
+
+	.clk(\w~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\n~combout [5]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst2|dffs [5]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst2|dffs[5] .lut_mask = "ff00";
+defparam \inst2|dffs[5] .operation_mode = "normal";
+defparam \inst2|dffs[5] .output_mode = "reg_only";
+defparam \inst2|dffs[5] .register_cascade_mode = "off";
+defparam \inst2|dffs[5] .sum_lutc_input = "datac";
+defparam \inst2|dffs[5] .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N5
+maxii_lcell \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 (
+// Equation(s):
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5_combout  = (\inst2|dffs [5] $ ((!\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27 )))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7  = CARRY(((\inst2|dffs [5] & !\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27 )))
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7COUT1_36  = CARRY(((\inst2|dffs [5] & !\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27 )))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\inst2|dffs [5]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27 ),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5_combout ),
+	.regout(),
+	.cout(),
+	.cout0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7 ),
+	.cout1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7COUT1_36 ));
+// synopsys translate_off
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 .cin_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 .lut_mask = "c30c";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 .operation_mode = "arithmetic";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 .output_mode = "comb_only";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 .register_cascade_mode = "off";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 .sum_lutc_input = "cin";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y5_N6
+maxii_lcell \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 (
+// Equation(s):
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0_combout  = (((!\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27  & \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7 ) # 
+// (\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27  & \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7COUT1_36 ) $ (\inst2|dffs [6])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\inst2|dffs [6]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~27 ),
+	.cin0(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7 ),
+	.cin1(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~7COUT1_36 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .cin0_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .cin1_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .cin_used = "true";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .lut_mask = "0ff0";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .operation_mode = "normal";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .output_mode = "comb_only";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .register_cascade_mode = "off";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .sum_lutc_input = "cin";
+defparam \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X3_Y5_N8
+maxii_lcell \inst2|dffs[0]~_wirecell (
+// Equation(s):
+// \inst2|dffs[0]~_wirecell_combout  = (((!\inst2|dffs [0])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\inst2|dffs [0]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst2|dffs[0]~_wirecell_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst2|dffs[0]~_wirecell .lut_mask = "00ff";
+defparam \inst2|dffs[0]~_wirecell .operation_mode = "normal";
+defparam \inst2|dffs[0]~_wirecell .output_mode = "comb_only";
+defparam \inst2|dffs[0]~_wirecell .register_cascade_mode = "off";
+defparam \inst2|dffs[0]~_wirecell .sum_lutc_input = "datac";
+defparam \inst2|dffs[0]~_wirecell .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N1
+maxii_lcell \inst3|LPM_COUNTER_component|auto_generated|counter_cella0 (
+// Equation(s):
+// \inst3|LPM_COUNTER_component|auto_generated|safe_q [0] = DFFEAS(((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [0])), GLOBAL(\c~combout ), VCC, , , \inst2|dffs[0]~_wirecell_combout , , , \inst8~combout )
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUT  = CARRY(((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [0])))
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUTCOUT1_1  = CARRY(((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [0])))
+
+	.clk(\c~combout ),
+	.dataa(vcc),
+	.datab(\inst3|LPM_COUNTER_component|auto_generated|safe_q [0]),
+	.datac(\inst2|dffs[0]~_wirecell_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(\inst8~combout ),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst3|LPM_COUNTER_component|auto_generated|safe_q [0]),
+	.cout(),
+	.cout0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUT ),
+	.cout1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUTCOUT1_1 ));
+// synopsys translate_off
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella0 .lut_mask = "3333";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella0 .operation_mode = "arithmetic";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella0 .output_mode = "reg_only";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella0 .register_cascade_mode = "off";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella0 .sum_lutc_input = "datac";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella0 .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N2
+maxii_lcell \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 (
+// Equation(s):
+// \inst3|LPM_COUNTER_component|auto_generated|safe_q [1] = DFFEAS((\inst3|LPM_COUNTER_component|auto_generated|safe_q [1] $ ((\inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUT ))), GLOBAL(\c~combout ), VCC, , , 
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10_combout , , , \inst8~combout )
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUT  = CARRY(((\inst3|LPM_COUNTER_component|auto_generated|safe_q [1]) # (!\inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUT )))
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUTCOUT1_1  = CARRY(((\inst3|LPM_COUNTER_component|auto_generated|safe_q [1]) # (!\inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUTCOUT1_1 )))
+
+	.clk(\c~combout ),
+	.dataa(vcc),
+	.datab(\inst3|LPM_COUNTER_component|auto_generated|safe_q [1]),
+	.datac(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~10_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(\inst8~combout ),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUT ),
+	.cin1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella0~COUTCOUT1_1 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst3|LPM_COUNTER_component|auto_generated|safe_q [1]),
+	.cout(),
+	.cout0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUT ),
+	.cout1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUTCOUT1_1 ));
+// synopsys translate_off
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .cin0_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .cin1_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .lut_mask = "3ccf";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .operation_mode = "arithmetic";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .output_mode = "reg_only";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .register_cascade_mode = "off";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .sum_lutc_input = "cin";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella1 .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N3
+maxii_lcell \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 (
+// Equation(s):
+// \inst3|LPM_COUNTER_component|auto_generated|safe_q [2] = DFFEAS(\inst3|LPM_COUNTER_component|auto_generated|safe_q [2] $ ((((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUT )))), GLOBAL(\c~combout ), VCC, , , 
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15_combout , , , \inst8~combout )
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUT  = CARRY((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [2] & ((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUT ))))
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUTCOUT1_1  = CARRY((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [2] & ((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUTCOUT1_1 ))))
+
+	.clk(\c~combout ),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [2]),
+	.datab(vcc),
+	.datac(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~15_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(\inst8~combout ),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUT ),
+	.cin1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella1~COUTCOUT1_1 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst3|LPM_COUNTER_component|auto_generated|safe_q [2]),
+	.cout(),
+	.cout0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUT ),
+	.cout1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUTCOUT1_1 ));
+// synopsys translate_off
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .cin0_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .cin1_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .lut_mask = "a505";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .operation_mode = "arithmetic";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .output_mode = "reg_only";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .register_cascade_mode = "off";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .sum_lutc_input = "cin";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella2 .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N4
+maxii_lcell \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 (
+// Equation(s):
+// \inst3|LPM_COUNTER_component|auto_generated|safe_q [3] = DFFEAS(\inst3|LPM_COUNTER_component|auto_generated|safe_q [3] $ ((((\inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUT )))), GLOBAL(\c~combout ), VCC, , , 
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20_combout , , , \inst8~combout )
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [3]) # ((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUTCOUT1_1 )))
+
+	.clk(\c~combout ),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [3]),
+	.datab(vcc),
+	.datac(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~20_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(\inst8~combout ),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUT ),
+	.cin1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella2~COUTCOUT1_1 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst3|LPM_COUNTER_component|auto_generated|safe_q [3]),
+	.cout(\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT ),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .cin0_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .cin1_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .lut_mask = "5aaf";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .operation_mode = "arithmetic";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .output_mode = "reg_only";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .register_cascade_mode = "off";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .sum_lutc_input = "cin";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella3 .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N5
+maxii_lcell \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 (
+// Equation(s):
+// \inst3|LPM_COUNTER_component|auto_generated|safe_q [4] = DFFEAS(\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] $ ((((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT )))), GLOBAL(\c~combout ), VCC, , , 
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25_combout , , , \inst8~combout )
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUT  = CARRY((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] & ((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT ))))
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUTCOUT1_1  = CARRY((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] & ((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT ))))
+
+	.clk(\c~combout ),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [4]),
+	.datab(vcc),
+	.datac(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~25_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(\inst8~combout ),
+	.ena(vcc),
+	.cin(\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT ),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst3|LPM_COUNTER_component|auto_generated|safe_q [4]),
+	.cout(),
+	.cout0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUT ),
+	.cout1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUTCOUT1_1 ));
+// synopsys translate_off
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 .cin_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 .lut_mask = "a505";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 .operation_mode = "arithmetic";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 .output_mode = "reg_only";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 .register_cascade_mode = "off";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 .sum_lutc_input = "cin";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella4 .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N0
+maxii_lcell \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0 (
+// Equation(s):
+// \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0_combout  = (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [3] & (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [1] & (\inst3|LPM_COUNTER_component|auto_generated|safe_q [0] & 
+// !\inst3|LPM_COUNTER_component|auto_generated|safe_q [2])))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [3]),
+	.datab(\inst3|LPM_COUNTER_component|auto_generated|safe_q [1]),
+	.datac(\inst3|LPM_COUNTER_component|auto_generated|safe_q [0]),
+	.datad(\inst3|LPM_COUNTER_component|auto_generated|safe_q [2]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0 .lut_mask = "0010";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0 .operation_mode = "normal";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0 .output_mode = "comb_only";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0 .register_cascade_mode = "off";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0 .sum_lutc_input = "datac";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N6
+maxii_lcell \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 (
+// Equation(s):
+// \inst3|LPM_COUNTER_component|auto_generated|safe_q [5] = DFFEAS(\inst3|LPM_COUNTER_component|auto_generated|safe_q [5] $ (((((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT  & 
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUT ) # (\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT  & \inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUTCOUT1_1 ))))), GLOBAL(\c~combout ), VCC, , , 
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5_combout , , , \inst8~combout )
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUT  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [5]) # ((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUT )))
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUTCOUT1_1  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [5]) # ((!\inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUTCOUT1_1 )))
+
+	.clk(\c~combout ),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [5]),
+	.datab(vcc),
+	.datac(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~5_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(\inst8~combout ),
+	.ena(vcc),
+	.cin(\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT ),
+	.cin0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUT ),
+	.cin1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella4~COUTCOUT1_1 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst3|LPM_COUNTER_component|auto_generated|safe_q [5]),
+	.cout(),
+	.cout0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUT ),
+	.cout1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUTCOUT1_1 ));
+// synopsys translate_off
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .cin0_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .cin1_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .cin_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .lut_mask = "5aaf";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .operation_mode = "arithmetic";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .output_mode = "reg_only";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .register_cascade_mode = "off";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .sum_lutc_input = "cin";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella5 .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N9
+maxii_lcell \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1 (
+// Equation(s):
+// \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1_combout  = (((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [6] & !\inst3|LPM_COUNTER_component|auto_generated|safe_q [5])))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\inst3|LPM_COUNTER_component|auto_generated|safe_q [6]),
+	.datad(\inst3|LPM_COUNTER_component|auto_generated|safe_q [5]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1 .lut_mask = "000f";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1 .operation_mode = "normal";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1 .output_mode = "comb_only";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1 .register_cascade_mode = "off";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1 .sum_lutc_input = "datac";
+defparam \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N8
+maxii_lcell inst8(
+// Equation(s):
+// \inst8~combout  = (\w~combout ) # ((!\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] & (\inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0_combout  & \inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1_combout )))
+
+	.clk(gnd),
+	.dataa(\w~combout ),
+	.datab(\inst3|LPM_COUNTER_component|auto_generated|safe_q [4]),
+	.datac(\inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~0_combout ),
+	.datad(\inst4|LPM_COMPARE_component|auto_generated|aneb_result_wire[0]~1_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst8~combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam inst8.lut_mask = "baaa";
+defparam inst8.operation_mode = "normal";
+defparam inst8.output_mode = "comb_only";
+defparam inst8.register_cascade_mode = "off";
+defparam inst8.sum_lutc_input = "datac";
+defparam inst8.synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X1_Y5_N7
+maxii_lcell \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 (
+// Equation(s):
+// \inst3|LPM_COUNTER_component|auto_generated|safe_q [6] = DFFEAS((\inst3|LPM_COUNTER_component|auto_generated|safe_q [6] $ ((!(!\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT  & 
+// \inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUT ) # (\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT  & \inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUTCOUT1_1 )))), GLOBAL(\c~combout ), VCC, , , 
+// \inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0_combout , , , \inst8~combout )
+
+	.clk(\c~combout ),
+	.dataa(vcc),
+	.datab(\inst3|LPM_COUNTER_component|auto_generated|safe_q [6]),
+	.datac(\inst|LPM_ADD_SUB_component|adder|result_node|cs_buffer[1]~0_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(\inst8~combout ),
+	.ena(vcc),
+	.cin(\inst3|LPM_COUNTER_component|auto_generated|counter_cella3~COUT ),
+	.cin0(\inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUT ),
+	.cin1(\inst3|LPM_COUNTER_component|auto_generated|counter_cella5~COUTCOUT1_1 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst3|LPM_COUNTER_component|auto_generated|safe_q [6]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .cin0_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .cin1_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .cin_used = "true";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .lut_mask = "c3c3";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .operation_mode = "normal";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .output_mode = "reg_only";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .register_cascade_mode = "off";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .sum_lutc_input = "cin";
+defparam \inst3|LPM_COUNTER_component|auto_generated|counter_cella6 .synch_mode = "on";
+// synopsys translate_on
+
+// Location: LC_X2_Y6_N1
+maxii_lcell \inst6|LPM_COMPARE_component|auto_generated|op_1~32 (
+// Equation(s):
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~32_cout0  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [0] & (!\inst2|dffs [0])))
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~32COUT1_36  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [0] & (!\inst2|dffs [0])))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [0]),
+	.datab(\inst2|dffs [0]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst6|LPM_COMPARE_component|auto_generated|op_1~30 ),
+	.regout(),
+	.cout(),
+	.cout0(\inst6|LPM_COMPARE_component|auto_generated|op_1~32_cout0 ),
+	.cout1(\inst6|LPM_COMPARE_component|auto_generated|op_1~32COUT1_36 ));
+// synopsys translate_off
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~32 .lut_mask = "ff22";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~32 .operation_mode = "arithmetic";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~32 .output_mode = "none";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~32 .register_cascade_mode = "off";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~32 .sum_lutc_input = "datac";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~32 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y6_N2
+maxii_lcell \inst6|LPM_COMPARE_component|auto_generated|op_1~27 (
+// Equation(s):
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~27_cout0  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [1] & (\inst2|dffs [1] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~32_cout0 )) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [1] & ((\inst2|dffs [1]) # (!\inst6|LPM_COMPARE_component|auto_generated|op_1~32_cout0 ))))
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~27COUT1_37  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [1] & (\inst2|dffs [1] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~32COUT1_36 )) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [1] & ((\inst2|dffs [1]) # (!\inst6|LPM_COMPARE_component|auto_generated|op_1~32COUT1_36 ))))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [1]),
+	.datab(\inst2|dffs [1]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst6|LPM_COMPARE_component|auto_generated|op_1~32_cout0 ),
+	.cin1(\inst6|LPM_COMPARE_component|auto_generated|op_1~32COUT1_36 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst6|LPM_COMPARE_component|auto_generated|op_1~25 ),
+	.regout(),
+	.cout(),
+	.cout0(\inst6|LPM_COMPARE_component|auto_generated|op_1~27_cout0 ),
+	.cout1(\inst6|LPM_COMPARE_component|auto_generated|op_1~27COUT1_37 ));
+// synopsys translate_off
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .cin0_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .cin1_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .lut_mask = "ff4d";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .operation_mode = "arithmetic";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .output_mode = "none";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .register_cascade_mode = "off";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .sum_lutc_input = "cin";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~27 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y6_N3
+maxii_lcell \inst6|LPM_COMPARE_component|auto_generated|op_1~22 (
+// Equation(s):
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~22_cout0  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [2] & ((!\inst6|LPM_COMPARE_component|auto_generated|op_1~27_cout0 ) # (!\inst2|dffs [2]))) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [2] & (!\inst2|dffs [2] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~27_cout0 )))
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~22COUT1_38  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [2] & ((!\inst6|LPM_COMPARE_component|auto_generated|op_1~27COUT1_37 ) # (!\inst2|dffs [2]))) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [2] & (!\inst2|dffs [2] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~27COUT1_37 )))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [2]),
+	.datab(\inst2|dffs [2]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst6|LPM_COMPARE_component|auto_generated|op_1~27_cout0 ),
+	.cin1(\inst6|LPM_COMPARE_component|auto_generated|op_1~27COUT1_37 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst6|LPM_COMPARE_component|auto_generated|op_1~20 ),
+	.regout(),
+	.cout(),
+	.cout0(\inst6|LPM_COMPARE_component|auto_generated|op_1~22_cout0 ),
+	.cout1(\inst6|LPM_COMPARE_component|auto_generated|op_1~22COUT1_38 ));
+// synopsys translate_off
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .cin0_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .cin1_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .lut_mask = "ff2b";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .operation_mode = "arithmetic";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .output_mode = "none";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .register_cascade_mode = "off";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .sum_lutc_input = "cin";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~22 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y6_N4
+maxii_lcell \inst6|LPM_COMPARE_component|auto_generated|op_1~17 (
+// Equation(s):
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [3] & (\inst2|dffs [3] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~22COUT1_38 )) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [3] & ((\inst2|dffs [3]) # (!\inst6|LPM_COMPARE_component|auto_generated|op_1~22COUT1_38 ))))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [3]),
+	.datab(\inst2|dffs [3]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(\inst6|LPM_COMPARE_component|auto_generated|op_1~22_cout0 ),
+	.cin1(\inst6|LPM_COMPARE_component|auto_generated|op_1~22COUT1_38 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst6|LPM_COMPARE_component|auto_generated|op_1~15 ),
+	.regout(),
+	.cout(\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout ),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .cin0_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .cin1_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .lut_mask = "ff4d";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .operation_mode = "arithmetic";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .output_mode = "none";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .register_cascade_mode = "off";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .sum_lutc_input = "cin";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~17 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y6_N5
+maxii_lcell \inst6|LPM_COMPARE_component|auto_generated|op_1~12 (
+// Equation(s):
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~12_cout0  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] & ((!\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout ) # (!\inst2|dffs [4]))) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] & (!\inst2|dffs [4] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout )))
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~12COUT1_39  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] & ((!\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout ) # (!\inst2|dffs [4]))) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [4] & (!\inst2|dffs [4] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout )))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [4]),
+	.datab(\inst2|dffs [4]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout ),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst6|LPM_COMPARE_component|auto_generated|op_1~10 ),
+	.regout(),
+	.cout(),
+	.cout0(\inst6|LPM_COMPARE_component|auto_generated|op_1~12_cout0 ),
+	.cout1(\inst6|LPM_COMPARE_component|auto_generated|op_1~12COUT1_39 ));
+// synopsys translate_off
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~12 .cin_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~12 .lut_mask = "ff2b";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~12 .operation_mode = "arithmetic";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~12 .output_mode = "none";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~12 .register_cascade_mode = "off";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~12 .sum_lutc_input = "cin";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~12 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y6_N6
+maxii_lcell \inst6|LPM_COMPARE_component|auto_generated|op_1~7 (
+// Equation(s):
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~7_cout0  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [5] & (\inst2|dffs [5] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~12_cout0 )) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [5] & ((\inst2|dffs [5]) # (!\inst6|LPM_COMPARE_component|auto_generated|op_1~12_cout0 ))))
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~7COUT1_40  = CARRY((\inst3|LPM_COUNTER_component|auto_generated|safe_q [5] & (\inst2|dffs [5] & !\inst6|LPM_COMPARE_component|auto_generated|op_1~12COUT1_39 )) # 
+// (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [5] & ((\inst2|dffs [5]) # (!\inst6|LPM_COMPARE_component|auto_generated|op_1~12COUT1_39 ))))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [5]),
+	.datab(\inst2|dffs [5]),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout ),
+	.cin0(\inst6|LPM_COMPARE_component|auto_generated|op_1~12_cout0 ),
+	.cin1(\inst6|LPM_COMPARE_component|auto_generated|op_1~12COUT1_39 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst6|LPM_COMPARE_component|auto_generated|op_1~5 ),
+	.regout(),
+	.cout(),
+	.cout0(\inst6|LPM_COMPARE_component|auto_generated|op_1~7_cout0 ),
+	.cout1(\inst6|LPM_COMPARE_component|auto_generated|op_1~7COUT1_40 ));
+// synopsys translate_off
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .cin0_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .cin1_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .cin_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .lut_mask = "ff4d";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .operation_mode = "arithmetic";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .output_mode = "none";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .register_cascade_mode = "off";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .sum_lutc_input = "cin";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~7 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y6_N7
+maxii_lcell \inst6|LPM_COMPARE_component|auto_generated|op_1~0 (
+// Equation(s):
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~0_combout  = (\inst3|LPM_COUNTER_component|auto_generated|safe_q [6] & (((!\inst2|dffs [6]) # (!(!\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout  & 
+// \inst6|LPM_COMPARE_component|auto_generated|op_1~7_cout0 ) # (\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout  & \inst6|LPM_COMPARE_component|auto_generated|op_1~7COUT1_40 ))))) # (!\inst3|LPM_COUNTER_component|auto_generated|safe_q [6] & 
+// (((!(!\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout  & \inst6|LPM_COMPARE_component|auto_generated|op_1~7_cout0 ) # (\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout  & \inst6|LPM_COMPARE_component|auto_generated|op_1~7COUT1_40 ) & 
+// !\inst2|dffs [6]))))
+
+	.clk(gnd),
+	.dataa(\inst3|LPM_COUNTER_component|auto_generated|safe_q [6]),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\inst2|dffs [6]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(\inst6|LPM_COMPARE_component|auto_generated|op_1~17_cout ),
+	.cin0(\inst6|LPM_COMPARE_component|auto_generated|op_1~7_cout0 ),
+	.cin1(\inst6|LPM_COMPARE_component|auto_generated|op_1~7COUT1_40 ),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\inst6|LPM_COMPARE_component|auto_generated|op_1~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .cin0_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .cin1_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .cin_used = "true";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .lut_mask = "0aaf";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .operation_mode = "normal";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .output_mode = "comb_only";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .register_cascade_mode = "off";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .sum_lutc_input = "cin";
+defparam \inst6|LPM_COMPARE_component|auto_generated|op_1~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_F1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \out~I (
+	.datain(\inst6|LPM_COMPARE_component|auto_generated|op_1~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(out));
+// synopsys translate_off
+defparam \out~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule
